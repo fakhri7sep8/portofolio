@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <p class="logo">FAKHRI</p>
+            <button class="btnmenu" onclick="showHideMenu()"><i class='bx bx-menu'></i></button>
+            <div class="menu" id="menu"> 
+                <ul>
+                    <li><a href="#home">home</a></li>
+                    <li><a href="#about">about me</a></li>
+                    <li><a href="#skills">skils</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+   
+        <section class="jumbotron-home" id="home">     
+           <div class="jleft" >
+               <p class="name">Hi Nama Ana <span>Muhammad Fakhri Ramadhan</span></p>
+               <p class="job">Ana Adalah <span>Programmer</span></p>
+           </div> 
+           <div class="jright-home">
+            <img src="Screenshot 2023-11-22 100621.png" alt="foto">
+           </div>   
+       </section>
+        <section class="jumbotron-about" id="about" >
+            <div class="jright-about">
+                <img src="Screenshot 2023-11-22 100621.png" alt="foto" >
+            </div >
+            <div class="jleft" >
+                <h2>About <span>Me</span></h2>
+                <h3>Web <span>Programmer</span></h3>
+                <p class="desc">
+                    hello brother nama ana muhammad fakhri ramadhan , lahir pada tanggal 7 september 2008 , saya
+                    tinggal
+                    <span>di bekasi rawalumbu jembatann 11 , saya santri dari smk madinatul quran dan mengambil jurusan
+                        rpl
+                        (rekayasa perangkat lunak)</span>
+                </p>
+            </div>    
+        </section>
+        <section class="skils" id="skills">
+            <div class="title">
+                <h2 id="skils">SKI<span>LS</span></h2>
+            </div>
+            <div class="box">
+                <div class="card">
+                    <img src="Screenshot 2023-11-22 101245.png" alt="" height="60px" width="60px">
+                    <h5>HTML</h5>
+                    <div class="praskils">
+                        <p>HTML, singkatan dari "Hypertext Markup Language," adalah bahasa pemrograman yang digunakan untuk
+                            membuat dan merancang halaman web. HTML adalah salah satu komponen utama dalam pengembangan web
+                            dan digunakan untuk mengatur struktur dan tampilan konten di situs web. HTML digunakan untuk
+                            membuat elemen-elemen dasar seperti teks, gambar, tautan, tabel, formulir, dan banyak lagi</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="Screenshot 2023-11-22 101138.png" alt="" height="60px" width="60px">
+                    <h5>CSS</h5>
+                    <div class="praskils">
+                        <p>CSS adalah singkatan dari "Cascading Style Sheets." Ini adalah bahasa pemrograman yang digunakan
+                            untuk mengontrol tampilan dan gaya halaman web. Dengan CSS, Anda dapat memisahkan tampilan dari
+                            struktur konten dalam HTML. Ini memungkinkan Anda untuk mengatur elemen-elemen HTML, seperti
+                            teks, gambar, tautan, dan elemen-elemen lainnya, dengan berbagai properti gaya, seperti warna,
+                            ukuran font, margin, padding, dan banyak lagi.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="Screenshot 2023-11-22 101119.png" alt="" height="60px" width="60px">
+                    <h5>JAVA SCRIPT</h5>
+                    <div class="praskils">
+                        <p>JavaScript (JS) adalah bahasa pemrograman yang sering digunakan untuk mengembangkan aplikasi web
+                            interaktif. JavaScript adalah salah satu komponen inti dalam pengembangan web modern dan
+                            memungkinkan Anda menambahkan elemen-elemen interaktif dan dinamis ke halaman web.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact-me" id="contact">
+            <div class="contact-text">
+                <h2>Contact <span>Me</span></h2>
+               <div>
+                <div class="card2">
+                    <div class="contact-info">
+                        <div class="contact-box">
+                            <div>
+                                <h4>Address</h4>
+                                <p>Kota Bekasi Timur</p>
+                            </div>
+                        </div>
+                    </div>
+                   </div>
+                   <div class="card2">
+                    <div class="contact-info">
+                        <div class="contact-box">
+                            <div>
+                                <h4>Email</h4>
+                                <p>muhammadfakhriramadhan08@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                   </div>
+                   <div class="card2">
+                    <div class="contact-info">
+                        <div class="contact-box">  
+                            <div>
+                                <h4>Hp</h4>
+                                <p>+62 821 25xx xxxx</p>
+                            </div>
+                        </div>
+                    </div>
+                   </div>
+               </div>
+            </div>
+        </section>
+    
+    <script>
+       var menu = false
+       function showHideMenu () {
+        if (menu == false){
+        var element = document.getElementById("menu");
+        element.classList.add("show")
+        menu = true;
+       } else {
+        var element = document.getElementById("menu");
+        element.classList.remove("show")
+        menu = false;
+       }
+       }
+      
+    </script>
+</body>
+
+</html>
